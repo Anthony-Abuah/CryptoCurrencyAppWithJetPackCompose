@@ -81,28 +81,18 @@ dependencies {
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4'
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4'
 
+
     // Coroutine Lifecycle Scopes
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.0"
     implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.6.0"
 
 
+    // Dagger Hilt
     def hilt_lifecycle_viewModel = "1.0.0-alpha03"
     kapt "androidx.hilt:hilt-compiler:$hilt_lifecycle_viewModel"
-
     implementation("com.google.dagger:hilt-android:2.44")
     kapt("com.google.dagger:hilt-android-compiler:2.44")
-
-
     implementation 'androidx.hilt:hilt-navigation-compose:1.1.0-alpha01'
-
-    /*
-    implementation("com.google.dagger:hilt-android:2.44")
-    kapt("com.google.dagger:hilt-android-compiler:2.44")
-
-    def hilt_lifecycle_viewModel = "1.0.0-alpha03"
-    implementation "androidx.hilt:hilt-lifecycle-viewmodel:$hilt_lifecycle_viewModel"
-    kapt "androidx.hilt:hilt-compiler:$hilt_lifecycle_viewModel"
-*/
 
 
     // Retrofit
